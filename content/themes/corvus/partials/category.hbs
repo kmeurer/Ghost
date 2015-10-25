@@ -1,0 +1,74 @@
+{{#has tag="category one"}}
+    <div class="article-category_corvus green">
+        <a href="{{@blog.url}}/tag/category-one">
+            <span class="category-icon_corvus"><i class="fa fa-pencil"></i></span>
+            <h5 class="category-label_corvus">category one</h5>
+        </a>
+        {{> article-loop}}
+    </div>
+
+{{else}}
+
+
+{{#has tag="category two"}}
+    <div class="article-category_corvus deep-orange">
+        <a href="{{@blog.url}}/tag/category-two">
+            <span class="category-icon_corvus"><i class="fa fa-pencil"></i></span>
+            <h5 class="category-label_corvus">category two</h5>
+        </a>
+        {{> article-loop}}
+    </div>
+
+{{else}}
+
+
+{{#has tag="category three"}}
+    <div class="article-category_corvus blue-grey">
+        <a href="{{@blog.url}}/tag/category-three">
+            <span class="category-icon_corvus"><i class="fa fa-pencil"></i></span>
+            <h5 class="category-label_corvus">category three</h5>
+        </a>
+        {{> article-loop}}
+    </div>
+
+{{else}}
+    
+
+{{#has tag="category four"}}
+    <div class="article-category_corvus purple">
+        <a href="{{@blog.url}}/tag/category-four">
+            <span class="category-icon_corvus"><i class="fa fa-pencil"></i></span>
+            <h5 class="category-label_corvus">category four</h5>
+        </a>
+        {{> article-loop}}
+    </div>
+
+{{else}}
+
+
+{{#has tag="category five"}}
+    <div class="article-category_corvus red">
+        <a href="{{@blog.url}}/tag/category-five">
+            <span class="category-icon_corvus"><i class="fa fa-pencil"></i></span>
+            <h5 class="category-label_corvus">category five</h5>
+        </a>
+        {{> article-loop}}
+    </div>
+
+{{else}}
+
+
+{{! Normal post without specific category }}
+<div class="article-category_corvus indigo">
+    <a href="#">
+        <span class="category-icon_corvus"><i class="fa fa-pencil"></i></span>
+        <h5 class="category-label_corvus">General</h5>
+    </a>
+    {{> article-loop}}
+</div>
+
+{{/has}} {{! closing has tag="category one" }}
+{{/has}} {{! closing has tag="category two" }}
+{{/has}} {{! closing has tag="category three" }}
+{{/has}} {{! closing has tag="category four" }}
+{{/has}} {{! closing has tag="category five" }}
